@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <h1>Média do aluno</h1>
+    <div class="botoes">
+      <button id="botao1" onclick="clique1()">Calcular Média</button>
+    </div>
+    <section id="saida">
+    </section>
+    <script>
+      var output = document.getElementById('saida')
+
+      function clique1() {
+        var nome = prompt('Qual é o nome do aluno? ')
+        var nota1 = Number(prompt(`Qual foi a primeira nota de ${nome}?`))
+        var nota2 = Number(prompt(`Além de ${nota1}, qual foi a segunda nota de ${nome}?`))
+        var res = (nota1 + nota2)/2
+        output.innerHTML += `<p>Calculando a média final de <mark>${nome}</mark><p>`
+        output.innerHTML += `<p>As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark></p>`  
+        output.innerHTML += `<p>A média final será <mark>${res}</mark></p>`
+
+      }
+    </script>
+  </body>
+</html>

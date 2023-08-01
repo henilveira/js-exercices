@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <h1>JavaScript exercício botões</h1>
+    <div class="botoes">
+      <button id="botao1" onclick="clique1()">Botão 1</button>
+      <button id="botao2" onclick="clique2()">Botão 2</button>
+      <button id="botao3" onclick="clique3()">Botão 3</button>
+      <button id="botao4" onclick="clique4()">Botão 4</button>
+    </div>
+    <section id="saida">
+      <p>Log de cliques</p>
+    </section>
+    <script>
+      var output = document.getElementById('saida')
+
+      function clique1() {
+          output.innerHTML += '<p>Você clicou no Botão 1<p>'
+      }
+      function clique2() {
+          output.innerHTML += '<p>Você clicou no Botão 2<p>'
+      }
+      function clique3() {
+          output.innerHTML += '<p>Você clicou no Botão 3<p>'
+      }
+      function clique4() {
+          output.innerHTML += '<p>Você clicou no Botão 4<p>'
+      }
+    </script>
+  </body>
+</html>
