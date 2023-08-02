@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Inciando estudos com DOM</h1>
+    <p>Aqui vai o resutlado </p>
+    <p id="p2">Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1];
+        p1.style.color ='red';
+        corpo.style.backgroundColor = 'yellow';
+        var d = document.querySelector('div#msg')
+        d.style.color = 'blue';
+        
+
+    </script>
+</body>
+</html>

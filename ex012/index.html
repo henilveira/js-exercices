@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Validação de Nacionalidade</h1>
+    País que nasceu
+    <input type="text" name="txtna" id="txtna" />
+    <input id="verify" type="button" value="Verificar" onclick="verificar()" />
+    <section id="saida"></section>
+    <script>
+      function verificar() {
+        var txtna = document.getElementById("txtna").value;
+        var saida = document.getElementById("saida");
+        saida.innerHTML = `<p> Você nasceu em <strong> ${txtna} </strong> </p>`;
+        if (txtna == "Brasil") {
+          saida.innerHTML += `<p> tendo nascido em <strong> ${txtna}, </strong> você é Brasileiro</p>`;
+        } else {
+          saida.innerHTML += `<p> tendo nascido em <strong> ${txtna}, </strong> você é Estrangeiro!</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>

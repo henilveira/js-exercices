@@ -1,0 +1,19 @@
+body {
+    background-color: azure;
+    font-family: Poppins, sans-serif;
+    font-size: 20pt;
+}
+
+#area{
+    background-color: green;
+    color: white;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}   
+
+input {
+    font: normal 20pt Poppins;
+    width: 100px;
+}
