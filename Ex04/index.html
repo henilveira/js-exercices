@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Média</title>
+  </head>
+  <body>
+    <h1>Média do aluno</h1>
+    <div class="botoes">
+      <button id="botao1" onclick="calcular()">Calcular Média</button>
+    </div>
+    <section id="saida"></section>
+    <script>
+      var output = document.getElementById("saida");
+      var media = document.getElementById("botao1");
+      function calcular() {
+        var nome = prompt("Qual o nome do aluno?");
+        var n1 = Number(prompt(`Digite a primeira nota de ${nome}:`));
+        var n2 = Number(
+          prompt(`Além de ${n1}, digite a segunda nota de ${nome}:`)
+        );
+        var res = (n1 + n2) / 2;
+        output.innerHTML += `<p>A primeira nota de <strong>${nome}</strong> é <strong>${n1}</strong></p>`;
+        output.innerHTML += `<p>A segunda nota do(a) aluno(a) <strong>${nome}</strong> é <strong>${n2}</strong></p>`;
+        output.innerHTML += `<p>A média do aluno <strong>${nome}</strong> é <strong>${res}</strong></p>`;
+        if (res >= 7) {
+          output.innerHTML += `<p>Nossa sugestão é: <strong>MEUS PARABÉNS!!</strong> sua nota ficou <strong>ACIMA</strong> de 7.</p>`;
+        } else {
+          output.innerHTML += `<p>Nossa sugestão é: <strong>Tente estudar mais!</strong> sua nota ficou <strong>ABAIXO</strong> de 7.</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>
