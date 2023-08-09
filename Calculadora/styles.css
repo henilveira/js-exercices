@@ -1,0 +1,54 @@
+* {
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso garante que todo o viewport vertical seja ocupado */
+    margin: 0; /* Remova as margens padrão do corpo */
+}
+
+.container {
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    height: auto;
+    background-color: rgb(132, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content {
+    border-radius: 20px;
+    background-color: rgb(132, 0, 255) ;
+    flex-direction: row;
+    display: flex;
+}
+
+ul {
+    padding: 0;
+    margin : 0px;
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+}
+
+.output {
+    align-items: center;
+}
+li, input {
+    margin: 20px;
+    border: 0;
+    background-color: rgb(132, 0, 255) ;
+    border-radius: 20px;
+}
+
+#igual {
+    width: auto;
+    height: auto;
+}
